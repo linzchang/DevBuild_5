@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia Game</title>
+    <link href='https://fonts.googleapis.com/css?family=Bungee Outline' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Chivo' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Trivia Game</h1>
+    <h2>Some kinda trivia</h2>
+    <div class="question">
+      <p>What is 2 + 2?</p>
+      <button class="choice" onclick="checkAnswer('incorrect', 1)" type="button" name="button">2</button>
+      <button class="choice" onclick="checkAnswer('correct', 1)" type="button" name="button">4</button>
+      <button class="choice" onclick="checkAnswer('incorrect', 1)" type="button" name="button">6</button>
+    </div>
+
+    <div class="response hide" id="1">
+    </div>
+
+    <div class="question">
+      <p>What is blue?</p>
+      <button class="choice" onclick="checkAnswer('correct', 2)" type="button" name="button">A color</button>
+      <button class="choice" onclick="checkAnswer('incorrect', 2)" type="button" name="button">A sound</button>
+      <button class="choice" onclick="checkAnswer('incorrect', 2)" type="button" name="button">A taste</button>
+    </div>
+
+    <div class="response hide" id="2">
+    </div>
+
+    <div class="question">
+      <p>Which animal is pink?</p>
+      <button class="choice" onclick="checkAnswer('correct', 3)" type="button" name="button">A flamingo</button>
+      <button class="choice" onclick="checkAnswer('incorrect', 3)" type="button" name="button">A bat</button>
+      <button class="choice" onclick="checkAnswer('incorrect', 3)" type="button" name="button">A cat</button>
+    </div>
+
+    <div class="response hide" id="3">
+    </div>
+
+    <div class="question">
+      <p>What color is grass?</p>
+      <button class="choice" onclick="checkAnswer('incorrect', 4)" type="button" name="button">Red</button>
+      <button class="choice" onclick="checkAnswer('incorrect', 4)" type="button" name="button">Purple</button>
+      <button class="choice" onclick="checkAnswer('correct', 4)" type="button" name="button">Green</button>
+    </div>
+
+    <div class="response hide" id="4">
+    </div>
+
+  </body>
+  <script src="script.js"></script>
+  <script src="jquery-3.3.1.js"></script>
+</html>
