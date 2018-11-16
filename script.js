@@ -15,7 +15,7 @@ function nextQuestion(outcome, questionNumber) {
     newHTML.push('<div class="show"><p>Right</p>');
   }
 //  newHTML.push('<button type="button" class="next" onclick="displayNextQuestion(questionNumber)">Next Question</button></div>');
-  document.getElementById(questionNumber).className="response";
+  document.getElementById('response').className="response";
   $(".response").html(newHTML.join(""));
 }
 
